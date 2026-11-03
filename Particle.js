@@ -29,6 +29,8 @@ class Particle {
     
     if (this.pos.x > width) {
       this.pos.x = 0;
+    } else if (this.pos.x < 0) {
+      this.pos.x = width;
     }
   }
 
